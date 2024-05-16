@@ -47,7 +47,7 @@ go to history page to check list song
 search song tad thong sound and play test data ex1 
     Open Browser    ${url}      ${browser}
     Maximize Browser Window
-    Open Excel Document     filename= ${Excel_File_Path} robot_data_test.xlsx     doc_id=doc1 
+    Open Excel Document     filename= ${Excel_File_Path} /robot_data_test.xlsx     doc_id=doc1 
     Get Sheet               sheet_name=song
     ${data_log} =        Read Excel Cell         row_num=2       col_num=1   sheet_name=song
     Input Text     ${input_search_youtube}   ${data_log}
