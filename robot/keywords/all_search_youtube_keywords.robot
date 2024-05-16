@@ -7,23 +7,23 @@ Library    Collections
 
 ***Keywords***
 Read Excel Read Data Col 1
-    Open Excel Document     filename=robot_data_test.xlsx     doc_id=doc1 
+    Open Excel Document     filename=${Excel_File_Path} /robot_data_test.xlsx     doc_id=doc1 
     Get Sheet               sheet_name=song
     Read Excel Cell         row_num=1       col_num=2
     ${data_log} =        Read Excel Cell         row_num=2       col_num=1   sheet_name=song
     
 Read Excel Read Data Col 2
-    Open Excel Document     filename=robot_data_test.xlsx     doc_id=doc2 
+    Open Excel Document     filename=${Excel_File_Path} /robot_data_test.xlsx     doc_id=doc2 
     Get Sheet               sheet_name=song
     Read Excel Cell         row_num=2       col_num=2
     ${data_log2}          Read Excel Cell         row_num=3       col_num=1   sheet_name=song
 Read Excel Read Data Col 3
-    Open Excel Document     filename=robot_data_test.xlsx     doc_id=doc3 
+    Open Excel Document     filename=${Excel_File_Path} /robot_data_test.xlsx     doc_id=doc3 
     Get Sheet               sheet_name=song
     Read Excel Cell         row_num=1       col_num=2
     ${data_log3}         Read Excel Cell         row_num=4       col_num=1   sheet_name=song
 Read Excel Read Data Col 4
-    Open Excel Document     filename=robot_data_test.xlsx     doc_id=doc4 
+    Open Excel Document     filename=${Excel_File_Path} /robot_data_test.xlsx     doc_id=doc4 
     Get Sheet               sheet_name=song
     Read Excel Cell         row_num=2       col_num=2
     ${data_log4}          Read Excel Cell         row_num=5       col_num=1   sheet_name=song
